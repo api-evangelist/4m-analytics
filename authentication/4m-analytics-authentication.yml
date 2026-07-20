@@ -1,0 +1,30 @@
+generated: '2026-07-17'
+method: searched
+source: https://help.4manalytics.com/en/articles/11670237-how-to-generate-your-wfs-api-key-and-connect-to-your-gis-platform
+docs: https://help.4manalytics.com/en/collections/3720127-api-and-integrations
+summary:
+  types:
+  - apiKey
+  api_key_in:
+  - query
+  notes: >-
+    The 4M WFS API authenticates with an API key. Keys are admin-gated: an
+    organization admin first requests API access from their 4M Customer Success
+    Manager, then generates a key inside the 4Map web application (initials menu
+    -> "Generate API Key"). A key carries an optional link name, an optional
+    expiration date, and a data scope (all projects across the organization, or a
+    single folder). Generating a key returns a WFS endpoint URL embedding the key
+    for direct use in a GIS client. The 4Map application itself is protected by
+    interactive user sign-in at https://4map.4manalytics.com/signin. No OpenAPI
+    securityScheme is published, so this profile is captured from the provider
+    documentation rather than derived from a spec.
+schemes:
+- name: wfsApiKey
+  type: apiKey
+  in: query
+  scope: 4M WFS API (OGC Web Feature Service)
+  provisioning: admin-requested via Customer Success Manager, generated in 4Map
+  expiration: optional per-key expiration date
+  data_scope: all projects or single folder
+  sources:
+  - docs
