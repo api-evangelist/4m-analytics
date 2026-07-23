@@ -1,0 +1,23 @@
+generated: '2026-07-17'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+hosts:
+- host: www.4manalytics.com
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Oct  3 15:23:12 2026 GMT
+  hsts: true
+  hsts_max_age: 31536000
+- host: help.4manalytics.com
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Sep  4 16:44:23 2026 GMT
+  hsts: true
+  hsts_max_age: 15552000
+domains:
+- domain: 4manalytics.com
+  dnssec: false
+  caa: []
+  spf: false
+  dmarc: true
+  dmarc_policy: quarantine

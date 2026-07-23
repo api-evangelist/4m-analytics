@@ -1,0 +1,29 @@
+generated: '2026-07-17'
+method: searched
+source: live probes of /.well-known/* on 4M hosts
+note: >-
+  Probed the standard /.well-known/ discovery surface on the 4M web hosts. No
+  4M-owned discovery document was found. The only 200 is a security.txt served
+  at the help subdomain, but it is the third-party help-center vendor's
+  (Intercom) file — Canonical https://app.intercom.com/.well-known/security.txt,
+  reporting vulnerabilities to Intercom via Bugcrowd — not 4M's own security
+  program. It is recorded here for provenance but NOT wired as a 4M WellKnown or
+  SecurityTxt pointer.
+hosts:
+- host: https://www.4manalytics.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+- host: https://help.4manalytics.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    owner: intercom (help-center vendor)
+    canonical: https://app.intercom.com/.well-known/security.txt
+    third_party: true

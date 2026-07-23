@@ -1,0 +1,28 @@
+generated: '2026-07-17'
+method: searched
+source: https://help.4manalytics.com/en/collections/3720127-api-and-integrations
+docs: https://www.4manalytics.com/product
+standards:
+- id: ogc-wfs
+  name: OGC Web Feature Service (WFS)
+  conforms: true
+  evidence: >-
+    4M publishes a WFS API that streams line and point utility features into GIS
+    clients (ArcGIS, QGIS) via a generated WFS endpoint URL; WFS is the OGC Web
+    Feature Service standard.
+- id: geospatial-export-formats
+  name: GIS/CAD interchange formats (SHP, KML, GPKG, DWG, DXF, DGN, PDF)
+  conforms: true
+  evidence: >-
+    Product documentation states utility data can be exported to PDF, SHP, KML,
+    GPKG, DWG, DXF, and DGN for GIS and CAD workflows (Esri Shapefile, OGC
+    GeoPackage, KML, AutoCAD/Bentley CAD formats).
+- id: oauth2
+  conforms: false
+  evidence: no published OAuth2 flows; the WFS API uses API-key authentication
+- id: rfc9457-problem-details
+  conforms: false
+  evidence: no published OpenAPI or error schema to assert application/problem+json
+- id: openapi
+  conforms: false
+  evidence: no OpenAPI/Swagger description published for the WFS API

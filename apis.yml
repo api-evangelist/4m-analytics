@@ -1,23 +1,118 @@
 aid: 4m-analytics
 name: 4M Analytics
-description: 4M Analytics is a company surfaced as a portfolio company of insight-partners and added to
-  the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: >-
+  4M Analytics is a utility AI mapping company that builds the "Google Maps of
+  underground infrastructure." Its platform compiles millions of scattered
+  public utility records into a single, validated subsurface map, using an AI
+  conflation engine, satellite imagery, computer-vision object detection, and
+  geospatial experts to identify known and unknown underground utilities before
+  design and construction. Teams use 4M to speed utility record research,
+  reduce excavation risk, and avoid costly conflicts during planning,
+  pre-construction, and design. The platform exposes utility data through the
+  4M web application (4Map) and a WFS (OGC Web Feature Service) API that streams
+  line and point utility features directly into GIS and CAD tools (ArcGIS,
+  QGIS, AutoCAD, Autodesk, Bentley), with exports to PDF, SHP, KML, GPKG, DWG,
+  DXF, and DGN. Founded in 2019 (Austin, TX and Tel Aviv) and backed by Insight
+  Partners, 4M is added to the API Evangelist network and enriched here.
 url: https://raw.githubusercontent.com/api-evangelist/4m-analytics/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://cdn.prod.website-files.com/67d5dab5ed5716afa710d2ba/67ed3bcf477318fa89194ecc_OG%20Image%20-%20Option%202.webp
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - insight-partners
-x-tier: stub
-x-tier-reason: portfolio-lead
+x-tier: profiled
+x-tier-reason: enriched-from-public-surface
 specificationVersion: '0.20'
 created: '2026-07-17'
 modified: '2026-07-17'
 tags:
 - Company
-apis: []
+- Geospatial
+- GIS
+- Mapping
+- Utilities
+- Infrastructure
+- Subsurface
+- Location Intelligence
+- AI
+- Construction Technology
+common:
+- type: Website
+  url: https://www.4manalytics.com/
+- type: DeveloperPortal
+  url: https://help.4manalytics.com/en/collections/3720127-api-and-integrations
+- type: Documentation
+  url: https://help.4manalytics.com/en/collections/3720127-api-and-integrations
+- type: APIReference
+  url: https://help.4manalytics.com/en/articles/11670237-how-to-generate-your-wfs-api-key-and-connect-to-your-gis-platform
+- type: GettingStarted
+  url: https://help.4manalytics.com/en/articles/11670237-how-to-generate-your-wfs-api-key-and-connect-to-your-gis-platform
+- type: Support
+  url: https://help.4manalytics.com/en/
+- type: Blog
+  url: https://www.4manalytics.com/blog
+- type: SignUp
+  url: https://4map.4manalytics.com/signin?referer=signup
+- type: Login
+  url: https://4map.4manalytics.com/signin
+- type: TermsOfService
+  url: https://www.4manalytics.com/terms-of-use
+- type: PrivacyPolicy
+  url: https://www.4manalytics.com/privacy-policy
+- type: Authentication
+  url: authentication/4m-analytics-authentication.yml
+- type: Conformance
+  url: conformance/4m-analytics-conformance.yml
+- type: DomainSecurity
+  url: security/4m-analytics-domain-security.yml
+- type: LLMsTxt
+  url: llms/4m-analytics-llms.txt
+apis:
+- name: 4M WFS API
+  description: >-
+    The 4M WFS API is an OGC Web Feature Service that streams 4M's validated
+    subsurface utility data (line and point features) in real time into GIS
+    platforms such as ArcGIS and QGIS, eliminating manual file downloads. Access
+    is admin-gated: an organization admin requests access from their 4M Customer
+    Success Manager, then generates an API key from within the 4Map application
+    (initials menu, "Generate API Key"), optionally naming the link, setting an
+    expiration, and choosing a data scope (all projects or a single folder).
+    Generating the key returns a WFS endpoint URL for direct use in the GIS
+    client. The base host and per-key endpoint are provisioned per organization
+    and are not publicly published, so no fabricated baseURL is recorded here.
+  humanURL: https://help.4manalytics.com/en/collections/3720127-api-and-integrations
+  tags:
+  - WFS
+  - OGC
+  - GIS
+  - Geospatial
+  - Utilities
+  properties:
+  - type: Documentation
+    url: https://help.4manalytics.com/en/collections/3720127-api-and-integrations
+  - type: GettingStarted
+    url: https://help.4manalytics.com/en/articles/11670237-how-to-generate-your-wfs-api-key-and-connect-to-your-gis-platform
+  - type: Authentication
+    url: authentication/4m-analytics-authentication.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
