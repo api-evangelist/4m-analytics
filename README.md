@@ -64,6 +64,92 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-4M Analytics is a company surfaced as a portfolio company of insight-partners and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+4M Analytics is a utility AI mapping company that builds the "Google Maps of underground infrastructure." Its platform compiles millions of scattered public utility records into a single, validated subsurface map, using an AI conflation engine, satellite imagery, computer-vision object detection, and geospatial experts to identify known and unknown underground utilities before design and construction. Teams use 4M to speed utility record research, reduce excavation risk, and avoid costly conflicts during planning, pre-construction, and design. The platform exposes utility data through the 4M web application (4Map) and a WFS (OGC Web Feature Service) API that streams line and point utility features directly into GIS and CAD tools (ArcGIS, QGIS, AutoCAD, Autodesk, Bentley), with exports to PDF, SHP, KML, GPKG, DWG, DXF, and DGN. Founded in 2019 (Austin, TX and Tel Aviv) and backed by Insight Partners, 4M is added to the API Evangelist network and enriched here.
 
-Backed by: insight-partners
+**Areas:** Company · Geospatial · GIS · Mapping · Utilities · Infrastructure · Subsurface · Location Intelligence · Artificial Intelligence · Construction Technology
+
+## 4M Analytics on APIs.io
+
+Everything profiled for 4M Analytics is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/4m-analytics/](https://apis.io/providers/4m-analytics/)** — or go straight to one of the APIs or properties below.
+
+### APIs (1)
+
+- [4M WFS API](https://apis.io/apis/4m-analytics/4m-wfs-api/) — The 4M WFS API is an OGC Web Feature Service that streams 4M's validated subsurface utility data (line and point features) in real time into GIS platforms…
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [4M Analytics Authentication](https://apis.io/security/4m-analytics/4m-analytics-authentication/)
+- [4M Analytics Domain Security](https://apis.io/security/4m-analytics/4m-analytics-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.4manalytics.com/)
+- [Documentation](https://help.4manalytics.com/en/collections/3720127-api-and-integrations)
+- [Getting started](https://help.4manalytics.com/en/articles/11670237-how-to-generate-your-wfs-api-key-and-connect-to-your-gis-platform)
+- [API reference](https://help.4manalytics.com/en/articles/11670237-how-to-generate-your-wfs-api-key-and-connect-to-your-gis-platform)
+- [Sign up](https://4map.4manalytics.com/signin?referer=signup)
+- [Support](https://help.4manalytics.com/en/)
+- [Blog](https://www.4manalytics.com/blog)
+- [Terms of service](https://www.4manalytics.com/terms-of-use)
+- [Privacy policy](https://www.4manalytics.com/privacy-policy)
+
+## API Evangelist rating
+
+**Kin Score 26.5** — thin · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 64.3 |
+| Contract quality | 0.0 |
+| Contract governance | 18.2 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 57.1 |
+| Access clarity | 27.6 |
+
+**Agent readiness 2.5** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 19.2** — Energy & Utilities
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/4m-analytics/](https://apis.io/providers/4m-analytics/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for 4M Analytics: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/4m-analytics/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
